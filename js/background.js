@@ -1,11 +1,8 @@
 
-
-chrome.browserAction.onClicked.addListener(function(activeTab)
-{
-	chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
-		var url = tabs[0].url;
-		alert(url)
-	});
-    var newURL = 'https://google.com/search?q=';
-    chrome.tabs.create({ url: newURL });
+chrome.browserAction.onClicked.addListener(function(tab) { 
+    chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
+        var currentUrl = tabs[0].url;
+        var newUrl =  "http://gogifts.me/?url=" + currentUrl
+        chrome.tabs.update({url:newUrl});
+    });
 });
