@@ -1,8 +1,11 @@
 {
   "appName": {
-    "message": "Добавить в вишлист — GIFTS.ME"
+    "message": "Добавить в вишлист — GIFTSME"
   },
   "appDesc": {
     "message": "Добавьте любую веб-страницу в свой список желаний на gogifts.me"
+  },
+  "contextItem": {
+    "message": "Добавить страницу в вишлист"
   }
 }

@@ -1,5 +1,5 @@
 
-function onClicked() {
+function magic() {
     chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
         var currentUrl = tabs[0].url;
         var newUrl = "http://gogifts.me/?url=" + currentUrl
@@ -9,10 +9,22 @@ function onClicked() {
     });
 }
 
-chrome.browserAction.onClicked.addListener(onClicked);
+chrome.browserAction.onClicked.addListener(magic);
 
 chrome.commands.onCommand.addListener(function (command) {
     if (command == "keyblock") {
-        onClicked();
+        magic();
+    }
+});
+
+chrome.contextMenus.create({
+    id: "wish-add",
+    title: chrome.i18n.getMessage("contextItem"),
+    contexts: ["all"],
+});
+
+chrome.contextMenus.onClicked.addListener(function(info, tab) {
+    if (info.menuItemId == "wish-add") {
+        magic();
     }
 });

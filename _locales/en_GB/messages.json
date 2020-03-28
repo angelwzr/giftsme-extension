@@ -1,8 +1,11 @@
 {
   "appName": {
-    "message": "Add to wishlist — GIFTS.ME"
+    "message": "Add to wishlist — GIFTSME"
   },
   "appDesc": {
     "message": "Add any web page to your wishlist on gogifts.me"
+  },
+  "contextItem": {
+    "message": "Add this page to wishlist"
   }
 }

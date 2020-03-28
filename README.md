@@ -8,4 +8,4 @@ A simple browser extension to add current tab page to the GIFTS.ME wishlist.
 |Google Chrome|n/a|Fully supported|
 |Microsoft Edge|n/a|Fully supported|
 |Opera|n/a|Fully supported|
-|Mozilla Firefox|n/a|Fully supported|
+|Mozilla Firefox|[Firefox Addons](https://addons.mozilla.org/en-US/firefox/addon/gogiftsme/)|Fully supported|
