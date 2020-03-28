@@ -7,5 +7,18 @@
   },
   "contextItem": {
     "message": "Add this page to wishlist"
+  },
+  "abH2": {
+    "message": "About"
+  },
+  "abP1": {
+    "message": "A simple browser extension to add current tab page url to the GIFTSME wishlist. You can use either extension icon in the browser toolbar, context menu item or a keyboard shortcut (default is Ctrl+Shift+Y) to perform this action."
+  },
+  "abP2": {
+    "message": "You need to have an active account on the site for extension to work properly."
+  }
+  ,
+  "abBut": {
+    "message": "Visit GIFTSME"
   }
 }

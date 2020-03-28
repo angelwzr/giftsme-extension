@@ -23,7 +23,7 @@ chrome.contextMenus.create({
     contexts: ["all"],
 });
 
-chrome.contextMenus.onClicked.addListener(function(info, tab) {
+chrome.contextMenus.onClicked.addListener(function (info, tab) {
     if (info.menuItemId == "wish-add") {
         magic();
     }
